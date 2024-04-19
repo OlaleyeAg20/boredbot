@@ -1,0 +1,96 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    background: #AEA4E9;
+    background-image: url(assets/bored.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    column-gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    min-height: 100svh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    background: #21212178;
+    width: min(80%, 480px);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+    gap: 1rem;
+    border-radius: .5rem;
+    color: #f2f2f2;
+    text-overflow: ellipsis;
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+.container button{
+    background: #00A6ED;
+    border: 2px solid #00A6ED;
+    color: #f2f2f2;
+    padding: .5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: .25rem;
+    overflow: hidden;     
+}
+
+.container button:hover{
+    background: none;
+}
+
+.container button:active{
+    background: #00A6ED;
+}
+
+.output{
+    background: #CDC4D6;
+    color: #333;
+    padding: 1rem;
+    border-radius: .25rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 480px) {
+    body{
+    background-position: -200px center;
+    }
+}
+
+footer, .title{
+    margin-top: auto;
+}
+
+footer{
+    color: #f2f2f2;
+    backdrop-filter: blur(5px);
+    width: 100vw;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer a{
+    color: #f2f2f2;
+}
